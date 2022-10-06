@@ -1,0 +1,596 @@
+.hdr{
+    width: 256px;
+    border: 1px solid blue;
+    padding: 14px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 28pt;
+}
+.bsize {
+    font-size: 18pt;
+    font-weight: bold;
+}
+#invoice{
+    padding: 30px;
+}
+.samefont {
+    font-size: 14pt;
+    padding: 2px;
+}
+.invoice {
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px
+}
+
+.invoice header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3989c6
+}
+
+.invoice .company-details {
+    /*text-align: right;*/
+    text-align: center;
+}
+
+.invoice .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .contacts {
+    margin-bottom: 20px
+}
+
+.invoice .invoice-to {
+    text-align: left
+}
+
+.invoice .invoice-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .invoice-details {
+    text-align: right
+}
+
+.invoice .invoice-details .invoice-id {
+    margin-top: 0;
+    color: #3989c6
+}
+
+.invoice main {
+    padding-bottom: 50px
+}
+
+.invoice main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.invoice main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.invoice main .notices .notice {
+    font-size: 1.2em
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px
+}
+
+.invoice table td,.invoice table th {
+    padding: 15px;
+    background: #eee;
+    border-bottom: 1px solid #fff
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #3989c6;
+    font-size: 1.2em
+}
+
+.invoice table .qty,.invoice table .total,.invoice table .unit {
+    text-align: right;
+    font-size: 1.2em
+}
+
+.invoice table .no {
+    color: #fff;
+    font-size: 1.6em;
+    background: #3989c6
+}
+
+.invoice table .unit {
+    background: #ddd
+}
+
+.invoice table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.invoice table tbody tr:last-child td {
+    border: none
+}
+
+.invoice table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-top: 1px solid #aaa
+}
+
+.invoice table tfoot tr:first-child td {
+    border-top: none
+}
+
+.invoice table tfoot tr:last-child td {
+    color: #3989c6;
+    font-size: 1.4em;
+    border-top: 1px solid #3989c6
+}
+
+.invoice table tfoot tr td:first-child {
+    border: none
+}
+
+.invoice footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 8px 0
+}
+
+@media print {
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .invoice footer {
+        position: absolute;
+        bottom: 10px;
+        page-break-after: always
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}
+/*New CSS*/
+.photo{
+	width:250;
+	height:250;
+}
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+img.img-responsive {
+    width: 130px;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+    html, body {
+      width: 100%;
+height:100%;
+position:absolute;
+top:0px;
+bottom:0px;
+margin: auto;
+margin-top: 0px !important;
+border: 1px solid;
+  }
+   .toolbar {
+      visibility: hidden;
+   }
+}
+.hdr{
+    width: 200px;
+    border: 2px solid #5b9bd5;
+    padding: 1px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20pt;
+}
+.bsize {
+    font-size: 18pt;
+    font-weight: bold;
+}
+page[size='A4'] {
+  /*background: white;
+  width: 1240px;
+    height: 1754px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+  width: 100%;
+height:100%;
+position:absolute;
+top:0px;
+bottom:0px;
+margin: auto;
+margin-top: 0px !important;
+border: 1px solid;
+}
+#invoice{
+    padding: 10px;
+    width: 1200px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.samefont {
+    font-size: 12pt;
+    padding: 0px;
+    display:inline;
+    clear:both;
+}
+.invoice {
+    position: relative;
+    background-color: #deeaf6;
+    min-height: 680px;
+    padding: 15px
+}
+
+.invoice header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #deeaf6
+}
+
+.invoice .company-details {
+    /*text-align: right;*/
+    text-align: center;
+}
+
+.invoice .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.invoice .contacts {
+    margin-bottom: 20px
+}
+
+.invoice .invoice-to {
+    text-align: left
+}
+
+.invoice .invoice-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .invoice-details {
+    text-align: right
+}
+
+.invoice .invoice-details .invoice-id {
+    margin-top: 0;
+    color: #3989c6
+}
+
+.invoice main {
+    padding-bottom: 5px
+}
+
+.invoice main .thanks {
+    margin-top: -16px;
+    font-size: 2em;
+    margin-bottom: 9px;
+}
+
+.invoice main .notices {
+    padding-left: 6px;
+    /*border-left: 6px solid #3989c6*/
+}
+
+.invoice main .notices .notice {
+    font-size: 1.2em
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    page-break-inside: avoid !important;
+}
+
+.invoice table td,.invoice table th {
+    padding: 5px;
+    background: #eee;
+    /*border-bottom: 1px solid #fff*/
+}
+
+.invoice table th {
+    white-space: nowrap;
+    /*font-weight: 400;*/
+    font-size: 16px
+}
+
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #3989c6;
+    font-size: 1.2em
+}
+
+.invoice table .qty,.invoice table .total,.invoice table .unit,.invoice table .subtotal {
+    text-align: right;
+    font-size: 1.2em
+}
+
+.invoice table .no {
+    color: #fff;
+    font-size: 1.6em;
+    background: #3989c6
+}
+
+.invoice table .unit {
+    background: #ddd
+}
+
+.invoice table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.invoice table tbody tr:last-child td {
+    border: none
+}
+
+.invoice table tfoot td {
+    background: 0 0;
+    /*border-bottom: none;*/
+    white-space: nowrap;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: 1px solid #deeaf6
+}
+
+.invoice table tfoot tr:first-child td {
+    /*border-top: none*/
+}
+
+.invoice table tfoot tr:last-child td {
+    /*color: #3989c6;
+    font-size: 1.4em;
+    border-top: 1px solid #3989c6*/
+}
+
+.invoice table tfoot tr td:first-child {
+    /*border: none*/
+}
+.center_txt {
+font-size:10pt;
+float:left;
+}
+.invoice footer {
+width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 4px 0;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 750mm;        
+  }
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .invoice footer {
+        position: absolute;
+        bottom: 10px;
+        page-break-after: always
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}
+    body {
+        font-family: arial;
+        margin:10px;
+    }
+    p {
+        margin: 0pt;
+    }
+    table.items {
+        border: 1mm solid #9dc3e6;
+    }
+    td {
+        vertical-align: top;
+    }
+
+    table thead td {
+        text-align: center;
+        border: 1mm solid #9dc3e6;
+    }
+    .items td.blanktotal {
+        background-color: #EEEEEE;
+    }
+
+    .items td .totals {
+        text-align: right;
+    }
+
+    .items td.cost {
+        text-align: '.'center;
+    }
+    .center_name{
+            font-size: 15pt;
+    text-align: center;
+    font-size: 25px !important;
+    font-weight: bold;
+    padding: 0px;
+    margin-left: -128px;
+    }
+    .top_txt{
+    font-size: 10pt;
+    text-align: center;
+    }
+    .main_logo{
+        width:80px;
+    }
+    .center_logo{
+        width:80px;
+    }
+    .photo{
+        width:100px;
+    }
+    .qrcode123{
+        /* float: right; */
+    position: absolute;
+    right: 129px;
+    }
+    .sign{
+    margin-top:10px;
+        font-size:8pt;
+        margin-left:100px;
+    }
+    .custmargin{
+        margin-left:8px;
+    }
+    .bottom_center_name{
+        font-size:8pt;
+        text-align:right;
+        margin-left: 470px !important;
+        
+        margin-bottom:30px;
+    }
+    /* Selects the second element of div siblings */
+.bottom_center_name:nth-child(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+.bottom_center_name:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+.bottom_center_name:nth-child(3) {
+  background: yellow;
+}
+    address{
+        ext-transform: uppercase;
+        margin-top:20px;
+        margin-right:100px;
+    }
+    #block_container{
+        
+    }
+    #bloc1, #bloc2
+{
+    display:inline;
+}
+.auth_signature{
+font-sie:7.5pt;
+    margin-left:650px;
+    margin-bottom:10px;
+    
+}
+.signature{
+    font-size:8pt;
+}
+.siteurl{
+    color:blue;
+    text-decoration:underline;
+    font-size:7.5pt;
+}
+small{
+    font-size:8pt;
+}
+.footer_txt{
+    font-sie:10pt;
+}
+.verify_txt{
+    font-size:7.5pt;
+    margin-top:-40px;
+}
+.center_address_bottom{
+    font-size:7.5pt;
+}
+.break-word 
+{
+  word-wrap: break-word;
+}
+table{
+    page-break-inside: avoid !important;
+}
+.page-break {
+page-break-before: always;
+page-break-after:auto;
+}
+.details_fees{
+	margin-top:20px;margin-bottom:20px;
+}
+.tablehdr,.tblheader{
+	background-color: #deeaf6;color:black;font-size:8pt;
+}
+.table_smt{
+	width:100%
+}
+.student_details{
+	float:left;
+}
+.course_details{
+	float:right;
+}
+.qrcode
+    {
+      position: absolute;
+      right: 122px;
+      width: 100px;
+      height: 100px;
+    }
+    .shell
+    {
+    position: absolute;
+    top: 883px;
+    right: 150px;
+    width: 40px;
+    height: 40px;
+    }

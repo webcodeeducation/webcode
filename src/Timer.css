@@ -1,0 +1,36 @@
+ .error-msg {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .react-datetime-picker {
+    padding-left: 10px;
+  }
+
+  .counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+    padding: 10px;
+    background: linear-gradient(25deg, #95e2ff, #5f79ff, #8ed5ff);
+  }
+
+  .counter .time {
+    margin-right: 30px;
+  }
+
+  .counter .time-value {
+    padding: 1px;
+    font-size: 500%;
+    color: #fff;
+    line-height: 1;
+  }
+
+  .time-label {
+    text-align: center;
+    font-size: 20px;
+  }

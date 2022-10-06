@@ -1,0 +1,19 @@
+.examblock{
+	display:block;
+}
+.hideme{
+	display:none;
+}
+
+#test>ul {
+    margin: 0px;
+    list-style-type: none;
+    color: #000!important;
+    padding: 0px;
+    position: relative;
+}
+#test>ul>li {
+    border: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+    position: relative;
+}

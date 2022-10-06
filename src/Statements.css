@@ -1,0 +1,38 @@
+.confirmation-text {
+  display: flex;
+  color: white;
+  margin: 0.5rem 0 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.button-container {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.confirmation-button, delete-button {
+  display: inline-flex;
+  background-color: #cc0000;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.cancel-button {
+  background-color: #999999;
+}
+
+.confirmation-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #b2b2b2;
+  cursor: pointer;
+}
